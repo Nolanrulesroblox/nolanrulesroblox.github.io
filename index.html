@@ -1,12 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>NRRINC Media - Home</title>
-<meta name="description" content="Home of NRRINC Media. Tech, Computers, Javascript and More." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NRRINC Media</title>
 </head>
-<body style="font-size: large;">
-<p>We are dealing with ISP issues at the moment. We have this Fallback page set until we get it fixed. <br>Note: The site has Not been Hacked. We are just dealing with Our ISP.</p>
-<p>contact: <a href="mailto:contact@nrrinc.net">contact@nrrinc.net</a></p>
-<p>hope to be fixed soon -nrrinc</p>
+<body>
+  <h1>Welcome to NRRINC Media.</h1>
+  <p>Due to An Issue Out of our Control, The Nrrinc.net and Simplebutuseful.org Websites Are Down. We are Currently Trying to Fix these Issues. Sorry for Any and All inconveniences.</p>
+  <p>-Nolan O, NRRINC Media 20/1/2021 GMT</p>
   <br>
-  <p>update: the FULL site will be working in 48 hours or so. current time: 1:53 AM GMT, 16/1/2021</p>
-   <br> ^ update, this was a Lie. will be fixed on Tuesday.... ffs.
-</body<
+  <br>
+  <p>If needed, You can Contact me <a href="mailto:contact@nrrinc.net">here.</a></p>
+  <!--
+
+The ISP that was Providing Our Website had Gone Down due to a Person Cutting the Wire while Trimming the Trees. In my Area, we dont have an Option to Get a New ISP at this time. 
+
+I also dont have the funds to Host The site On google Cloud or on AWS. 
+
+I am Very Sorry for all the Issues. Hope to get it fixed soon.
+
+  -->
+  <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    </style>
+    <button type="button" class="collapsible">If you wish to View Why We are Down: (click)</button>
+    <div class="content">
+      <p>The ISP that was Providing Our Website had Gone Down due to a Person Cutting the Wire while Trimming the Trees. In my Area, We dont have an Option to Get a New ISP at this time. <br>
+
+        I also dont have the funds to Host The site On google Cloud or on AWS. But We are Hoping to get it fixed this week.<br>
+        
+        I am Very Sorry for all the Issues. Hope to get it fixed soon.<br>
+      
+      -n</p>
+    </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</body>
+</html>
