@@ -10,14 +10,14 @@
             flyer_css: "yes", // Yes or url to css
             flyer_show: 'img', //img/vid/ifm <-- changed frm to ifm
             flyer_aid: '', // Unused
-            flyer_title: 'A Word From Our Sponsor: NRRINC Media', // title
-            flyer_title_link: 'http://git.nrrinc.net', //title link
+            flyer_title: 'A Word From Our Sponsor: Dad', // title
+            flyer_title_link: 'http://exmaple.com', //title link
             flyer_frame_src: '/flyer/ad.html', // src to iframe, if iframe is set
             flyer_frame_rp: 'unsafe-url', // if url is on another server, change
             flyer_desc:'your ad desc1', // Bottom text
-            flyer_video:'/link/to/mp4.mp4', // video link (NOT YOUTUBE.), if video is set
+            flyer_video:'https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4', // video link (NOT YOUTUBE.), if video is set
             flyer_img_title: 'my cool image', // title of image, if image is set
-            flyer_img_src: "/flyer/flyerjs.png", // image src, if image is set
+            flyer_img_src: "https://via.placeholder.com/500x375", // image src, if image is set
             flyer_note: "Hey! Welcome to Flyer! http://git.nrrinc.net/flyer", // unused, but to be used
             flyer_ajax1: "",
             flyer_ajax2: "",
@@ -25,9 +25,8 @@
             flyer_userandom: "true", // use random flyer config WIP
             flyer_debug:"null" // Set to TRUE for Debug info
            }
-           console.warn("yea yea yea.....'count.php not found yea i know. because its a Github site..'" )
     </script>
-    <script src="/flyer/flyer-v1.3.js"></script>
+    <script src="/flyer/flyer.js"></script>
 </head>
 
 <body style="background-color: green">
@@ -35,6 +34,7 @@
     <button id="yesfly">Show Flyer</button>
     <button id="nofly">Hide/Remove Flyer</button>
     <div class="text"></div>
+    <div id="flyerver">Flyer Ver: 1.3.5-HF2 | 2/18/2021</div>
  <!--   <script>
         $(document).ready(function () {
             $(".setting1").append(flyer.flyer_css)

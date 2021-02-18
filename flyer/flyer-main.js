@@ -1,4 +1,8 @@
-// the Flyer Project, NRRINC Media (C) 2021, Apache V2. Flyer.js V1.3
+// the Flyer Project, NRRINC Media (C) 2021, Apache V2. Flyer.js V1.3.3
+if (typeof $ === 'undefined') {
+    location.reload();
+    //why..... JUST LEARN TO CODE JAVASCRIPT AND THIS DOESNT NEED TO HAPPEN.
+}
 flypreinit();
 function flypreinit() {
     try {
@@ -28,14 +32,6 @@ function flypreinit() {
         }
     }
 }
-(function(){;var script = document.createElement("SCRIPT");script.src = '/flyer/jquery-embed.js';script.type = 'text/javascript';document.getElementsByTagName("head")[0].appendChild(script);
-var checkReady= function(callback){
-    if(window.jQuery){callback(jQuery);
-    }else{window.setTimeout(function() {
-         checkReady(callback);},20);
-    }};
-checkReady(function($){
-    
 flyerinit();
 $(document).ready( function () {
     if ($("#flyer").length) {
@@ -190,7 +186,7 @@ function flyerdetect() {
         flylogerror("No IFM/VID/IMG set.")
     }
 };
-function flyerinit() {
+async function flyerinit() {
     flyconsole();
     if (flyer.flyer_debug == 'true') {
         flydebug();
@@ -209,7 +205,7 @@ function flyerinit() {
         if (flyer.flyer_css === 'yes') {
             (function() {
                 var css = document.createElement('link'); css.rel = 'stylesheet';
-                css.href = '/flyer/flyer-v1.3.css';
+                css.href = '/flyer/flyer.css';
                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(css);
               })();
               if (flyer.flyer_debug == 'true') {
@@ -295,7 +291,7 @@ function purecookieDismiss() {
     purecookieDismiss();
   }
 function flydebug() {
-    $.getScript( "/flyer/flyer-debug-v0.2.js" )
+    $.getScript( "/flyer/flyer-debug.js" )
     .done(function( script, textStatus ) {
         flylog(' Loading debug',textStatus );
         flylog(" Debug On")
@@ -317,4 +313,3 @@ function flyconsole() {
         return Function.prototype.bind.call(console.error, console, context, 'color:red;');
     }();
 }
-});})();
