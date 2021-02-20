@@ -1,4 +1,4 @@
-// the Flyer Project, NRRINC Media (C) 2021, Apache V2. Flyer.js V1.3.3
+// the Flyer Project, NRRINC Media (C) 2021, Apache V2. Flyer.js V1.3.5 - FLYER DEMO, DO NOT USE THIS.
 if (typeof $ === 'undefined') {
     localStorage.setItem("flynoload", "flyer-JQ-failed-to-load-last-load")
     location.reload();
