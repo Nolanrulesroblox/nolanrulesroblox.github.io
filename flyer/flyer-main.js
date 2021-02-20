@@ -1,5 +1,6 @@
 // the Flyer Project, NRRINC Media (C) 2021, Apache V2. Flyer.js V1.3.3
 if (typeof $ === 'undefined') {
+    localStorage.setItem("flynoload", "flyer-JQ-failed-to-load-last-load")
     location.reload();
     //why..... JUST LEARN TO CODE JAVASCRIPT AND THIS DOESNT NEED TO HAPPEN.
 }
